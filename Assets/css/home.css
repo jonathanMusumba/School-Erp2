@@ -1,0 +1,47 @@
+﻿.content-wrapper {
+    padding: 15px;
+}
+
+.small-box {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+    .small-box:hover {
+        transform: scale(1.05);
+    }
+
+.box-header {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.box-title {
+    margin: 0;
+    font-weight: bold;
+}
+
+.btn {
+    margin: 5px 0; /* Add some space between buttons */
+}
+
+.main-footer {
+    background-color: #f7f7f7;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+.enrollment-trends-margin {
+    margin-top: 20px; /* Adjust this value as needed */
+}
+    .main-footer h4 {
+        margin-top: 0;
+    }
+
+    .main-footer a {
+        color: #007bff;
+    }
+
+        .main-footer a:hover {
+            text-decoration: underline;
+        }

@@ -1,0 +1,50 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+
+    &::after, &::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        border-collapse: collapse;
+    }
+}
+
+.report {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+
+    @include print() {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .bounds {
+        width: 50%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: .2em;
+        border: 1px solid #000000a3;
+        border-radius: 5px;
+
+        @include print() {
+            width: 100%;
+            padding: .5em;
+            margin: .6em;
+            box-sizing: border-box;
+            border: none;
+        }
+    }
+}
